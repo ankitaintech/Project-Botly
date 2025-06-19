@@ -1,3 +1,13 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# Ignore config with sensitive info
+config.py
+.env
+
+
+# Ignore Python cache
+__pycache__/
+# Ignore IDE settings
+.idea/

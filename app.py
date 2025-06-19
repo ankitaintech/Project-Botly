@@ -1,8 +1,6 @@
-import google.generativeai as genai
 import os
-from config import GOOGLE_API_KEY
+import google.generativeai as genai
 from flask import Flask, render_template, request, jsonify
-
 
 # Try to get API key from environment (Render, Vercel)
 # Fallback to local config.py for development

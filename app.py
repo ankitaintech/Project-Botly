@@ -3,9 +3,18 @@ import os
 from config import GOOGLE_API_KEY
 from flask import Flask, render_template, request, jsonify
 
-#Set your API key for Google Geerative AI
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+
+# Try to get API key from environment (Render, Vercel)
+# Fallback to local config.py for development
+try:
+    api_key = os.environ["GOOGLE_API_KEY"]
+except KeyError:
+    from config import GOOGLE_API_KEY
+    api_key = GOOGLE_API_KEY
+
+# Configure the GenAI client
+genai.configure(api_key=api_key)
+
 
 #Initialize the model
 model = genai.GenerativeModel("models/gemini-2.5-flash")

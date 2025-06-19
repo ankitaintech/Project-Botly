@@ -1,9 +1,10 @@
 import google.generativeai as genai
 import os
+from config import GOOGLE_API_KEY
 from flask import Flask, render_template, request, jsonify
 
 #Set your API key for Google Geerative AI
-os.environ["GOOGLE_API_KEY"] = "AIzaSyAfCOaE7O34OIKdvkdFcWtElNNn2OqmzEA"
+os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 #Initialize the model

@@ -1,2 +1,27 @@
+# Python junk
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment files
 .env
+*.env
+
+# Flask or config secrets
 config.py
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Virtual environments
+env/
+venv/
+env-ankitaProj/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

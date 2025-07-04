@@ -1,6 +1,6 @@
 # Python junk
-__pycache__/
-*.py[cod]
+__pycache__
+*.pyc
 *.pyo
 
 # Environment files
@@ -11,16 +11,15 @@ __pycache__/
 config.py
 
 # Jupyter notebooks
-.ipynb_checkpoints/
+.ipynb_checkpoints
 
 # Virtual environments
-env/
-venv/
-env-ankitaProj/
+env
+venv
 
 # IDE/editor settings
-.vscode/
-.idea/
+.vscode
+.idea
 
 # OS files
 .DS_Store
